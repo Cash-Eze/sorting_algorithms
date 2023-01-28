@@ -1,5 +1,5 @@
-#ifndef "_SORT_"
-#define "_SORT_"
+#ifndef __SORT__
+#define __SORT__
 #include <stdlib.h>
 /**
  * struct listint_s - Doubly linked list node
@@ -10,9 +10,9 @@
  */
 typedef struct listint_s
 {
-	const int n;
-	struct listint_s *prev;
-	struct listint_s *next;
+const int n;
+struct listint_s *prev;
+struct listint_s *next;
 } listint_t;
 
 /* printing algorithms */
@@ -25,4 +25,4 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 
-#endif /* _SORT_ */
+#endif /*_SORT_*/
